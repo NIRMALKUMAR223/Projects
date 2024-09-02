@@ -1,0 +1,72 @@
+#body{
+    background: linear-gradient(to right, gray,rgb(66, 66, 66));    
+}
+h1{
+    text-align: center;
+    margin: 5vh;
+    color: white;
+}
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: 100%;
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    border: solid 0.5px;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 20px;
+    background-color: rgb(196, 214, 214);
+    box-shadow: inset 0px 0px 15px 4px rgb(223, 223, 223);
+}
+img{
+    width: 18vh;
+    height: 18vh;
+    margin: 0.1vh;
+    border-radius: 20px;
+}
+img:hover{
+    box-shadow: 0px 0px 10px 4px black;
+}
+audio{
+    width: 15rem;
+    margin: 0.5rem;
+    height: 3rem;
+}
+.one,.two,.three,.four,.five,.six{
+    flex-wrap: wrap;
+    padding: 1rem;
+    margin: 1rem;
+    align-items: center;
+    justify-content: space-evenly;
+    display: flex;
+    
+    border-radius: 20px;
+    flex-direction: column;
+    background: linear-gradient(to top, rgb(65, 65, 65),rgb(202, 202, 202));
+}
+.one:hover,.two:hover,.three:hover,.four:hover,.five:hover,.six:hover{
+    cursor: pointer;
+    background: linear-gradient(to bottom, rgb(255, 255, 255),rgb(113, 166, 226));
+    box-shadow: 0px 0px 5px 4px white;
+    border: solid 0.5px;
+    
+
+}
+audio:active{
+    box-shadow: 0px 0px 10px 4px white;
+}
+button{
+    display: flex;
+    position: fixed;
+    top: 5vh;
+    right: 10vh;
+    border-radius: 20px;
+    height: 4vh;
+    width: 10vh;
+    justify-content: center;
+    align-items: center;
+    padding: 1vh;
+}

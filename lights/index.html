@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lights</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10%;
+            flex-direction: column;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size:larger;
+            background-color: black;
+        }
+        #over{
+            height: 100%;
+            width: 50%;
+            /* background-color: rgb(240, 240, 240); */
+            background-color: black;
+            border-radius: 20px;
+        }
+        #container{
+            /* background-color: rgb(240, 240, 240); */
+            background-color: black;
+
+            margin: 2%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        #second{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+
+        }
+        #off{
+            margin: 20px;
+            background-color: lightsalmon;
+            height: 40px;
+            width: 100px;
+            border-radius: 20px;
+            border: none;
+            box-shadow: 1px 0px 1px 1px red;
+            cursor: pointer;
+        }
+        #off:active{
+            background-color: red;
+        }
+        #on{
+            margin: 20px;
+            cursor: pointer;
+            background-color: lightgreen;
+            height: 40px;
+            width: 100px;
+            border-radius: 20px;
+            border: none;
+            box-shadow: 1px 0px 1px 1px green;
+        }
+        #on:active{
+            background-color: green;
+        }
+
+    </style>
+    <script>
+        function on(){
+            var a=document.getElementById('img')
+            a.src='pic_bulbon.png'
+            var bac=document.getElementById('over')
+            bac.style.backgroundColor="white"
+            var ba=document.getElementById('container')
+            ba.style.backgroundColor="white"
+            document.body.style.backgroundColor="white"
+        }
+        function off(){
+            var b=document.getElementById('img')
+            b.src="pic_bulboff.png"
+            var bac=document.getElementById('over')
+            bac.style.backgroundColor="black"
+            var ba=document.getElementById('container')
+            ba.style.backgroundColor="black"
+            document.body.style.backgroundColor="black"
+        }
+    </script>
+</head>
+<body>
+    <div id="over">
+        <div id="container">
+            <img src="pic_bulboff.png" alt="" id="img">
+        </div>
+        <div id="second">
+            <button id="off" onclick="off()">off</button>
+            <button id="on" onclick="on()">on</button>
+        </div>
+    </div>
+    
+</body>
+</html>

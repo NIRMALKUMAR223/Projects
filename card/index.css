@@ -1,0 +1,124 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+}
+.main{
+    padding: 20px;
+    margin: 20px;
+    width: 400px;
+    border-radius: 30px;
+    height: auto;
+    background:linear-gradient(to bottom, rgb(158, 233, 233),rgb(170, 173, 173));
+}
+.main:hover{
+    box-shadow: 0px 0px 10px 5px rgb(0, 0, 0);
+}
+.head{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.imgcircle{
+    border: 2px solid black;
+    border-radius: 50%;
+    padding: 6px;
+    background-color: white;
+}
+.imgcircle img{
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+}
+h3{
+    font-size: 25px;
+    color: white;
+}
+.doctordetail{
+    width: 400px;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.doctorimg img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px 4px black;
+}
+.trans{
+    border-radius: 20px;
+    background: white;
+    opacity: 0.7;
+    width: 380px;
+    height: 100px;
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+}
+.alert{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.call{
+    padding: 20px;
+}
+.alert img,.call img{
+    margin: 10px;
+    height: 20px;
+    width: 20px;
+}
+.alert h3{
+    font-size: medium;
+    color: black;
+}
+.first{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 400px;
+    height: 40px;
+    align-items: center
+}
+.experience{
+    display: flex;
+    flex-direction: row;
+}
+.exp{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(211, 211, 211);
+    border-radius: 10px;
+    margin-left: 10px;
+}
+.exp img{
+    height: 30px;
+    width: 30px;
+    margin: 10px;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+}
+.content h4{
+    color: blue;
+    margin: 4px;
+}
+.content h5{
+    margin: 4px;
+}
+.ver{
+    display: flex;
+    flex-direction: column;
+}

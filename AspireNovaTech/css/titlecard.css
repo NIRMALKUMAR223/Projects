@@ -1,0 +1,67 @@
+.card {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 2rem;
+    width: 16rem;
+    height: auto;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #87a2af;
+    box-shadow: 0px 0px 10px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+
+}
+
+.card img {
+    margin-bottom: 1rem;
+    border-radius: 20px ;
+    box-shadow: 3px 0px 10px 2px black;
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.card #person-details {
+    color: black;
+}
+
+.card h2 {
+    margin: 0 0 10px;
+    font-size: 1.5em;
+}
+
+.card p {
+    margin: 0;
+    color: #555; 
+}
+.about{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.item{
+    width: 50%;
+}
+@media screen and (max-width: 900px) {
+    .item{
+        width: 80%;
+    }
+    .about{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 600px) {
+    .about{
+        flex-direction: column;
+        padding-left: 2rem;
+
+    }
+    .item{
+        width: 100%;
+    }
+    .card img{
+        padding: 0%;
+    }
+}
