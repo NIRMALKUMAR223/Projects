@@ -1,0 +1,47 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    flex-direction: column;
+}
+.login{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding: 2em;
+    position: relative;
+    border-radius: 10px;
+    background:linear-gradient(135deg,rgb(255, 0, 179),rgb(104, 104, 224));
+}
+input,button{
+    margin: 0.5em;
+    border: none;
+    padding: 1em;
+    border-radius: 8px;
+}
+a{
+    text-align: right;
+    margin: 0.5em;
+    color: white;
+}
+a:active{
+    text-decoration: none;
+}
+hr{
+    width: 16em;
+    margin: 1em;
+}
+
+.login-icon img{
+    height: 2em;
+    margin: 1em;
+    border: 1px solid gray;
+    border-radius: 8px;
+    padding: 1em;
+    width: 2em;
+}
