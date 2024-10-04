@@ -1,0 +1,69 @@
+body{
+    font-weight: 800;
+    font-size: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+}
+
+div{
+    margin: 0.1em;
+    color: rgb(255, 255, 255);
+    background-color: rgb(69, 69, 224);
+    width: 260px;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 50%;
+    animation: around 20s linear infinite alternate-reverse;
+}
+
+@keyframes around{
+    10%{
+        transform: translate(600px,0px);
+        background-color: rgb(105, 224, 69);
+        color: black;
+
+    }
+    20%{
+        transform: translate(0px,300px);
+        background-color: rgb(224, 69, 224);
+    }
+    30%{
+        transform: translate(-600px,0px);
+        background-color: rgb(224, 74, 69);
+
+    }
+    40%{
+        transform: translate(0px,-300px);
+        background-color: rgb(13, 243, 224);
+    }
+    50%{
+        transform: translate(600px,0px);
+        background-color: rgb(243, 132, 5);
+
+    }
+    60%{
+        transform: translate(0px,300px);
+        background-color: rgb(236, 28, 202);
+
+    }
+    70%{
+        transform: translate(-600px,0px);
+        background-color: rgb(247, 38, 73);
+
+    }
+    80%{
+        transform: translate(0px,-300px);
+        background-color: rgb(250, 30, 30);
+
+    }
+    90%{
+        transform: translate(600px,0px);
+        background-color: rgb(11, 185, 54);
+
+    }
+}
