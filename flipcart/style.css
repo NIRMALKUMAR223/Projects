@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-style: normal;}
+
+body{
+    background-color: #e7e5e5;
+}
+
+header{
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+}
+
+nav{
+    height: 70%;
+    width: 95%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#logo-part{
+    flex-basis: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo-part img{
+    height: 70%;
+}
+
+#search-part{
+    flex-basis: 40%;
+    height: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: rgb(201, 221, 228);
+    padding-left: 2em;
+    padding-right: 1em;
+    
+}
+
+#search-part button{
+    height: 100%;
+    width: 8%;
+    border: none;
+    background-color: inherit;
+}
+
+#search-part input{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+    padding-left: 0.5em;
+    background-color: inherit;
+}
+
+
+#about-part{
+    flex-basis: 40%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#about-part .align-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 80%;
+}
+
+#about-part .align-section svg{
+    color: rgb(85, 84, 84);
+    height: 20px;
+    width: 30px;
+}
+
+#collections{
+    width: 100wh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5em;
+}
+
+#collections #main-list{
+    display: flex;
+    background-color: #ffffff;
+    width: 95%;
+    height: 50%;
+}
+
+#collections #main-list a{
+    text-decoration: none;
+    color: black;
+    height: 100%;
+    width: 100%;
+}
+
+#collections #main-list{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0.5em;
+    margin-bottom: 0.5em;
+
+}
+
+#collections #main-list a span img{
+    height: 80%;
+    width: 80%;
+    object-fit: cover;
+}
+
+#collections #main-list a .inner-box-list{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 90%;
+    font-size: medium;
+}
+
+#collections #main-list a .inner-box-list h5{
+    text-align: center;
+}
+
+#loader{
+    width: 95%;
+    height: 50%;
+}
+
+#loader img{
+    width: 100%;
+    height: 100%;
+}
