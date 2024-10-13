@@ -1,4 +1,4 @@
-var count = 1;
+var count = 2;
 var imgChanger = document.getElementById('change');
 setInterval(()=>{
     if (count ==1){
@@ -24,4 +24,4 @@ setInterval(()=>{
     if (count == 5){
         count = 1; 
     }    
-},2000)
+},1800)
