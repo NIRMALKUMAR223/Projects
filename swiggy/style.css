@@ -10,8 +10,9 @@
 }
 
 body{
-    background-color: #f1f1f1;
+    background-color: #ffffff;
     height: 200vh;
+
 }
 
 header{
@@ -133,13 +134,16 @@ main{
     z-index: 0;
     position: absolute;
     top: 85px;
-    left: 70px;
+    left: 20px;
+    /* border: 1px solid; */
+    /* padding-bottom: 2em; */
+    
 }
 
 #section-main1{
     display: flex;
-    background-color: #fff;
-    width: 90%;
+    background-color:transparent;
+    width: 80%;
     flex-direction: column;
 }
 
@@ -178,7 +182,7 @@ main{
 #section-main1 .container2 .inner-container {
     flex-basis: 15%;
     height: 40%;
-    padding: 0.5em;
+    /* padding: 0.5em; */
 }
 
 
@@ -194,16 +198,113 @@ main{
     font-weight: 500;
 }
 
+.section-main1-5{
+    background-color: #ffffff;
+    width: 80%;
+    margin-top: 0.5em;
+    border-bottom: 1px solid gray;
+    border-top: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1em;
+}
+
+.section-main1-5 h2{
+    padding: 1em;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.section-main1-5 #collection-hotels{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.section-main1-5 #collection-hotels .collection-hotels-list{
+    /* border: 1px solid; */
+    flex-basis: 23%;
+    height: 290px;
+    position: relative;
+    width: 100%;
+}
+
+.section-main1-5 #collection-hotels .collection-hotels-list h3{
+    position: absolute;
+    top: 140px;
+    left: 10px;
+    font-size: larger;
+    font-weight: 600;
+    color: white;
+}
+
+.section-main1-5 #collection-hotels .collection-hotels-list .span{
+    width: 100%;
+    height: 170px;
+    margin-bottom: 0.4em;
+}
+
+ .collection-hotels-list img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;   
+}
+
+ .collection-hotels-list .content-hotel{
+    display: flex;
+    flex-direction: column;
+}
+
+.collection-hotels-list .content-hotel p{
+    font-size: 20px;
+    display: inline;
+    font-weight: 600;
+    text-align: left;
+    padding-left: 0.5em ;
+    margin: 0.1em;
+}
+
+.collection-hotels-list .content-hotel .outer-circle{
+    /* background-color: aqua; */
+    padding-left: 0.5em ;
+    display: flex;
+    align-items: center;    
+}
+
+.collection-hotels-list .content-hotel #details{
+    font-size: 15px;
+    font-weight: 400;
+    color: gray;
+    padding-left: 0.5em;
+}
+
+ .collection-hotels-list .content-hotel .outer-circle .circle{
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    padding: 0.13em;
+    margin-right: 0.3em;
+}
+
+.collection-hotels-list .content-hotel .outer-circle .circle svg{
+    color: white;
+}
+
 #section-main2 {
-    background-color: #fff;
-    width: 90%;
+    width: 80%;
     margin-top: 0.5em;
     height: 100vh;
 }
 
-
 #section-main2 #menu #option{
-    width: 90%;
+    width: 80%;
     display: flex;
     height: 50px;
     justify-content: space-evenly;
@@ -213,18 +314,25 @@ main{
 
 #section-main2 #menu #option .option-items h3{
     font-size: small;
-    font-weight: 100;
+    font-weight: 400;
 }
 
 #section-main2 #menu #option .option-items{
     border: 1px solid rgb(83, 85, 80);
-    width: 10%;
+    width: auto;
     border-radius: 10px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
-    padding: 0.1em;
-    height: 110%;
+    padding: 0.1em 1em;
+    height: 100%;
+}
+
+#section-main2 #menu #option .option-items svg{
+    color: gray;
+    width: 15px;
+    height: 15px;
+    padding-left: 0.1em;
 }
 
 
@@ -236,31 +344,102 @@ main{
 
 #grid{
     display: grid;
-    grid-template-columns: auto auto auto auto  ;
-    position: absolute;
-    top: 450px;
-    left: 120px;
-    gap: 20px;
+    width: 100%;
+    grid-template-columns: auto auto auto auto;
+    gap: 30px;
+    padding: 0.5em;
+    margin-top: 3.5em;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid gray;
+    padding-bottom: 4em;
+    margin-bottom: 2em;
 }
 
-#grid img{
-    width: 100%;
-    height: 80%;
-    border-radius: 20px;
+#grid .collection-hotels-list .span img{
+    width: 230px;
+    height: 150px;
     object-fit: cover;
 }
 
-#grid .grid-item{
-    border: 1px solid gray;
-    box-shadow: 0px 0px 10px 1px rgb(194, 190, 190);
-    width: 250px;
-    height: 250px;
-    border-radius: 20px;
-    padding: 1em;
+.cities{
+    width: 100%;
+    height: 55%;
+    border-bottom: 1px solid gray;
 }
 
-#grid .grid-item h3{
-    text-align: center;
-    font-size: larger;
+.cities #collections-cities{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    height: 40vh;
+    color: gray;
+}
 
+.cities h2{
+    font-size: 30px;
+    font-weight: 400;
+    margin: 0.5em;
+}
+
+.cities #collections-cities .outer-cities{
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid gray;
+    font-size: 13px;
+}
+footer{
+    margin-top: 2em;
+    height: 13vh;
+    width: 101.5%;
+    left: -20px;
+    position: absolute;
+    background-color: rgb(189, 187, 187);
+}
+
+.footer-main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1em;
+    margin-left: 4em;
+}
+
+.footer-main .footer-icon{
+    flex-basis: 40%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 400px;
+}
+
+.footer-main h2{
+    padding-left: 2em;
+    font-weight: 500;
+}
+
+.footer-main .footer-icon img{
+    width: 140px;
+    height: 50px;
+}
+
+.collection-hotels-list{
+    transition: all 0.4s ease-in-out;
+}
+
+.collection-hotels-list:hover{
+    cursor: pointer;
+    transform: scale(0.9);
+}
+
+.option-items:hover{
+    color: white;
+    background-color: gray;
 }
