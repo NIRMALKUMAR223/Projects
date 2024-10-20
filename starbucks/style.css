@@ -22,6 +22,8 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
+    position: fixed;
+    z-index: 4;
 }
 
 header nav{
@@ -143,6 +145,7 @@ header nav #part-two #profile svg:hover{
 }
 
 #name{
+    padding-top: 90px;
     width: 100%;
     background-color: rgb(33, 41, 34);
     color: white;
@@ -586,11 +589,16 @@ main #world #world-main #inner-black button{
 
 footer{
     width: 100%;
-    height: 50vh;
-    margin-top: 8em;
+    /* height: 70vh; */
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    padding-top: 4em;
+    flex-direction: column;
+    background-color: rgb(39, 85, 39);
+    padding-bottom: 1em;
+
 }
 
 footer h1{
@@ -598,4 +606,209 @@ footer h1{
     color: white;
 }
 
+footer #footer-main{
+    width: 80%;
+    /* background-color: #fff; */
+    border-bottom: 1px solid gray;
+    padding-bottom: 2em;
+}
 
+#footer-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+
+footer #footer-main #footer-one{
+    display: flex;
+    /* border: 1px solid; */
+    flex-basis: 8%;
+    height: 100%;
+    width: 100%;
+    padding-top: 0.5em;
+}
+
+footer #footer-main #footer-one img{
+    width: 50px;
+    height: 50px;
+}
+
+
+footer #footer-main #footer-two{
+    display: flex;
+    /* border: 1px solid; */
+    flex-basis: 16%;
+    height: 100%;
+    width: 100%;
+    padding-top: 1em;
+    padding-left: 1em;
+    /* background-color: #727272; */
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+footer #footer-main #footer-two .heading{
+    font-size: medium;
+}
+
+footer #footer-main #footer-two .list{
+    display: flex;
+    padding-top: 1em;
+    padding-left: 2em;
+    flex-direction: column;
+}
+
+footer #footer-main #footer-two .list li{
+    display: inline;
+    font-size: 13px;
+
+    padding-top: 1em;
+}
+
+footer #footer-main #footer-three{
+    display: flex;
+    /* border: 1px solid; */
+    flex-basis: 18%;
+    height: 100%;
+    width: 100%;
+    padding-top: 1em;
+    padding-left: 1em;
+    /* background-color: #727272; */
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+footer #footer-main #footer-three .heading{
+    font-size: medium;
+}
+
+footer #footer-main #footer-three .list{
+    display: flex;
+    padding-top: 1em;
+    padding-left: 2em;
+    flex-direction: column;
+}
+
+footer #footer-main #footer-three .list li{
+    display: inline;
+    padding-top: 1em;
+    font-size: 13px;
+
+}
+
+footer #footer-main #footer-four{
+    display: flex;
+    /* border: 1px solid; */
+    flex-basis: 30%;
+    height: 100%;
+    width: 100%;
+    padding-top: 1em;
+    padding-left: 1em;
+    /* background-color: #727272; */
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+footer #footer-main #footer-four .heading{
+    font-size: medium;
+}
+
+footer #footer-main #footer-four .list{
+    display: flex;
+    padding-top: 1em;
+    padding-left: 2em;
+    flex-direction: column;
+}
+
+footer #footer-main #footer-four .list li{
+    display: inline;
+    padding-top: 1em;
+    font-size: 13px;
+}
+
+footer #footer-main #footer-five{
+    display: flex;
+    /* border: 1px solid; */
+    flex-basis: 20%;
+    height: 100%;
+    width: 100%;
+    padding-top: 1.5em;
+    padding-left: 1em;
+    /* background-color: #727272; */
+    color: white;
+    font-size: 13px;
+    flex-direction: column;
+}
+
+footer #footer-main #footer-five #social{
+    display: flex;
+    width: 100%;
+    height: 50px;
+    margin-top: 2em;
+    /* background-color: #e4e3e3; */
+}
+
+footer #footer-main #footer-five #social div{
+    flex-basis: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer #footer-main #footer-five #social div svg{
+    height: 60%;
+    width: 60%;
+}
+
+footer #footer-main #footer-six{
+    display: flex;
+    flex-basis: 20%;
+    height: 100%;
+    width: 100%;
+    padding-top: 1em;
+    /* background-color: firebrick; */
+    flex-direction: column;
+}
+
+footer #footer-main #footer-six #appstore{
+    display: flex;
+    flex-direction: column;
+}
+
+footer #footer-main #footer-six img{
+    width: 100%;
+    height: 100%;
+    padding-bottom: 0.5em;
+}
+
+#web-details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1em;
+    width: 80%;
+    /* background-color: #fff; */
+    height: 50px;
+}
+
+#web-details #web-one{
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;
+    color: white;
+}
+
+#web-details #web-one div{
+    border-right: 1px solid;
+    padding-right: 0.5em;
+    margin-right: 2em;
+}
+
+#web-details #web-two {
+    font-size: 12px;
+    color: white;
+}
