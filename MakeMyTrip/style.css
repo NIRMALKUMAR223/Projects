@@ -1,0 +1,531 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+header{
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    box-shadow: inset 0px 0px 100px 30px rgba(0, 0, 0, 0.829);
+    align-items: center;
+    position: relative;
+}
+
+.header-logo{
+    position: absolute;
+    top: 0px;
+    z-index: -1;
+    width: 100%;
+    height: 580px;
+    background-color: blue;
+}
+
+.header-logo img{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+nav{
+    width: 90%;
+    /* background-color: red; */
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .nav-left{
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 13%;
+    width: 100%;
+    height: 100%;
+}
+
+nav .nav-left img{
+    height: 50%;
+    width: 100%;
+    object-fit: cover;
+}
+
+nav .nav-right{
+    /* background-color: azure; */
+    flex-basis: 75%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+}
+
+nav .nav-right div{
+    /* margin-right: 1em; */
+    flex-basis: 25%;
+    /* background-color: red; */
+}
+
+nav .nav-right div h5{
+    font-size: 0.9em;
+}
+
+nav .nav-right div h6{
+    font-size: 8px;
+}
+
+nav .nav-right div svg{
+    margin: 0.5em;
+    flex-basis: 10%;
+    height: 1em;
+    width: 1em;
+}
+
+nav .nav-right div .inner-one{
+    /* background-color: red; */
+    flex-basis: 90%;
+}
+
+nav .nav-right .nav-one{
+    flex-basis: 20%;
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 100%;
+    color: #ffffff;
+    width: 100%;
+}
+
+nav .nav-right .nav-two{
+    flex-basis: 20%;
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    color: #ffffff;
+    width: 100%;
+
+}
+
+nav .nav-right .nav-three{
+    flex-basis: 15%;
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    color: #ffffff;
+}
+
+nav .nav-right .nav-four{
+    flex-basis: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40%;
+    color: #ffffff;
+    width: 100%;
+}
+
+nav .nav-right .nav-four h5{
+    font-size: 5px;
+    /* background-color: red; */
+    text-align: center;
+}
+
+nav .nav-right .nav-four div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+
+}
+
+nav .nav-right .nav-four h5{
+    font-size: 14px;
+    /* background-color: red; */
+    width: 13em;
+    height: 100%;
+    padding-left: 1em;
+}
+
+nav .nav-right .nav-four div img{
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+nav .nav-right .nav-five{
+    flex-basis: 15%;
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    color: #ffffff;
+    flex-direction: row;
+}
+
+nav .nav-right .nav-five img{
+    width: 1em;
+    height: 1em;
+    object-fit: cover;
+}
+
+nav .nav-right .nav-five h5{
+    font-size: 15px;
+    /* background-color: red; */
+}
+
+nav .nav-right .nav-six{
+    flex-basis: 10%;
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    color: #ffffff;
+}
+
+nav .nav-right .nav-six h5{
+    font-size: 15px;
+    /* background-color: red; */
+}
+
+header .white{
+    flex-wrap: wrap;
+    position: absolute;
+    width: 70%;
+    height: 100px;
+    background-color: #ffffff;
+    top: 90px;
+    border-radius: 8px;
+    z-index: 2;
+    box-shadow: 0px 0px 5px 1px rgb(87, 85, 85);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .white .options{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-basis: 9%;
+    height: 100%;
+    width: 100%;
+    /* background-color: red; */
+}
+
+header .white .options:nth-child(1){
+    border-bottom: 4px solid rgb(34, 96, 230);
+}
+
+header .white .options h5{
+    font-size: 10px;
+}
+
+header .white .options .option-aligner{
+    flex-basis: 10%;
+    /* background-color: gray; */
+    height: 70%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+
+header .white .options .option-aligner img{
+    height: 80%;
+    width: 80%;
+    object-fit: cover;
+}
+
+header .white-back{
+    position: absolute;
+    width: 90%;
+    background-color: #ffffff;
+    top: 130px;
+    border-radius: 8px;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-bottom: 0.1em;
+    height: 52vh;
+}
+
+header .white-back .end{
+    margin-top: 3.9em;
+    width: 98%;
+    height: 12%;
+    /* background-color: aquamarine;    */
+    display: flex;
+    flex-direction: column;
+}
+
+header .white-back .end #one{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0.5em 1em;
+    /* background-color: red   ; */
+}
+
+header .white-back .end #one #radio{
+    /* background-color: rgb(70, 65, 65); */
+    flex-basis: 50%;
+    display: flex;
+}
+
+
+header .white-back .end #one #radio label{
+    margin-right: 1em;
+}
+
+header .white-back .end #one #radio input{
+    margin-right: 0.5em;
+}
+
+header .white-back .end #one #one-end{
+    /* background-color: aqua; */
+    flex-basis: 50%;
+    display: flex;
+    justify-content: end;
+    font-size: 0.9em;
+}
+
+.white-back #main{
+    width: 98%;
+    height: 8em;
+    /* background-color: red; */
+    border-radius: 8px;
+    border: 1px solid gray;
+    margin: 0.3em ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0.6em;
+}
+
+.white-back #main div h3,p{
+    color: gray;
+    font-size: 15px;
+}
+
+.white-back #main #from{
+    flex-basis: 25%;
+    /* background-color: aqua; */
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+    padding-left: 1.5em;
+    border-right: 1px solid gray;
+}
+
+.white-back #main #from h2{
+    font-size: 27px;
+    margin: 0.3em 0em; 
+}
+
+.white-back #main #to{
+    flex-basis: 25%;
+    /* background-color: aqua; */
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+    padding-left: 1.5em;
+    border-right: 1px solid gray;
+
+}
+
+.white-back #main #to h2{
+    font-size: 27px;
+    margin: 0.3em 0em; 
+}
+
+
+.white-back #main #departure{
+    flex-basis: 15%;
+    /* background-color: aqua; */
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-right: 1px solid gray;
+}
+
+.white-back #main #departure div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.white-back #main #departure div svg{
+    margin-left: 0.5em;
+}
+
+.white-back #main #departure #date{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.white-back #main #departure #date div{
+    margin: 0.5em;
+}
+
+.white-back #main #departure #date div h1{
+    margin-right: 0.2em;
+}
+
+.white-back #main #return{
+    flex-basis: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-right: 1px solid gray;
+    /* background-color: aqua; */
+    padding-left: 2em;
+}
+
+
+.white-back #main #return div{
+    /* margin-left: 0.5em; */
+    /* background-color: red; */
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 1.2em;
+    text-align: start;
+}
+
+.white-back #main #return p{
+    margin-bottom: 1em;
+    /* background-color: green; */
+    margin-right: 1em;
+}
+
+.white-back #main #return div svg{
+    margin-left: 0.5em;
+}
+
+.white-back #main #travel{
+    flex-basis: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* background-color: green; */
+}
+
+.white-back #main #travel div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.white-back #main #travel div svg{
+    margin-left: 0.5em;
+}
+
+.white-back #main #travel #traveling{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.5em;
+}
+
+.white-back #main #travel #traveling h1{
+    margin-right: 0.2em;
+}
+
+
+.white-back #details{
+    /* background-color: gray; */
+    height: 80px;
+    width: 90%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.white-back #details #one{
+    background-color: aliceblue;
+    flex-basis: 20%;
+    height: 70%;
+    width: 100%;
+    margin: 1em;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid gray;
+}
+
+.white-back #details #one div{
+    /* background-color: green; */
+    width: 100%;
+    padding: 0.5em;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 13px;
+    flex-direction: row;
+}
+
+.white-back #details #one div input{
+    margin-right: 1em;
+}
+
+.white-back  #btn{
+    position: absolute;
+    /* bottom: 0px; */
+    /* right: 40%; */
+    top: 97%;
+}
+
+.white-back #btn button{
+    height: 2em;
+    width: 11em;
+    background: linear-gradient(to right, rgb(30, 155, 228), rgb(28, 103, 165));
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+}
+
+.white-back #btn button:hover{
+    cursor: pointer;
+}
