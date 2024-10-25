@@ -25,3 +25,17 @@ setInterval(()=>{
         count = 1; 
     }    
 },1800)
+
+
+var cart = document.getElementById('cart-part');
+var cartItems = document.getElementById('cart');
+var close = document.getElementById('span');
+console.log(cart);
+
+cart.addEventListener('click',()=>{
+    cartItems.style.display = 'flex';
+})
+
+close.addEventListener('click',()=>{
+    cartItems.style.display = 'none'
+})

@@ -85,6 +85,10 @@ nav{
     height: 80%;
 }
 
+#about-part .align-section:hover{
+    cursor: pointer;
+}
+
 #about-part .align-section svg{
     color: rgb(85, 84, 84);
     height: 20px;
@@ -92,14 +96,26 @@ nav{
 }
 
 #profile-part{
-    transition: all 1s linear;
+    transition: all 0.2s linear;
     border-radius: 10px;
 }
 
-#profile-part:hover{
+#cart-part{
+    transition: all 0.2s linear;
+    border-radius: 10px;
+    padding: 0px 1em;
+}
+
+#seller-part{
+    transition: all 0.2s linear;
+    border-radius: 10px;
+    padding: 0px 1em;
+
+}
+
+#profile-part:hover, #cart-part:hover, #seller-part:hover{
     background-color: rgb(123, 159, 226);
     color: white;
-
 }
 
 #collections{
