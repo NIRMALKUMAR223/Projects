@@ -4,21 +4,7 @@ const people = [
         photo: 'founders/nirmal.jpg',
         info: 'Founder'    
     },
-    {
-        name: 'Mahadhevan T',
-        photo: 'founders/mahadhevan.jpg',
-        info: 'Founder'    
-    },
-    {
-        name: 'Dinesh Kumar K',
-        photo: 'founders/dinesh.jpg',
-        info: 'Founder'
-    },
-    {
-        name: 'Alagar Samy S K',
-        photo: 'founders/alagar.jpg',
-        info: 'Founder'
-    }
+
 ];
 
 let currentIndex = 0;
