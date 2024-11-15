@@ -10,18 +10,18 @@ var ticket3 = document.getElementById('ticket-three');
 var ticket4 = document.getElementById('ticket-four');
 var svg = document.getElementById('svg');
 var check = document.getElementById('check');
-var 
-
+var specialOne = document.getElementById('special-one');
+var specialTwo = document.getElementById('special-two');
+var specialThree = document.getElementById('special-three');
 
 (()=>{
     ticket1.style.borderBottom  = '2px solid rgb(0, 119, 255)';
 })();
 
 (()=>{
+    child1.style.color = 'rgb(0, 119, 255)';
     child1.style.border = '0.5px solid rgb(0, 119, 255)';
-    child1.style.border = '0.5px solid rgb(0, 119, 255)';
-    child1.style.boxShadow = '0px 0px 5px 0.5px rgb(96, 96, 250)';
-})()
+})();
 
 ticket1.addEventListener('click',()=>{
     ticket1.style.borderBottom  = '2px solid rgb(0, 119, 255)';
@@ -54,17 +54,13 @@ ticket4.addEventListener('click',()=>{
 child1.addEventListener('click',()=>{
     child1.style.color = 'rgb(0, 119, 255)';
     child1.style.border = '0.5px solid rgb(0, 119, 255)';
-    child1.style.boxShadow = '0px 0px 5px 0.5px rgb(96, 96, 250)';
     child2.style.color = 'black';
     child2.style.border = '0.5px solid gray';
-    child2.style.boxShadow = '';
 })
 
 child2.addEventListener('click',()=>{
     child2.style.color = 'rgb(0, 119, 255)';
     child2.style.border = '0.5px solid rgb(0, 119, 255)';
-    child2.style.boxShadow = '0px 0px 5px 0.5px rgb(96, 96, 250)';
-    child1.style.boxShadow = '';
     child1.style.color = 'black';
     child1.style.border = '0.5px solid gray';
 })
@@ -94,17 +90,55 @@ setInterval(()=>{
 check.addEventListener('hover',()=>{
     check.style.cursor = 'pointer';
 })
-check.addEventListener('click',()=>{
 
+check.addEventListener('click',()=>{
     if(checkFlag){
         check.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
         <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
         </svg>`
         checkFlag = false;
         check.style.color = 'rgb(0, 119, 255)';
+
     }
     else{
         check.innerHTML = ''
         checkFlag = true;
+
     }
 })
+
+specialOne.addEventListener('click',()=>{
+    specialOne.style.color = 'white';
+    specialOne.style.border = '1px solid rgb(0, 119, 255)';
+    specialOne.style.backgroundColor = 'rgb(0, 119, 255)';
+    specialTwo.style.color = 'black';
+    specialTwo.style.border = '1px solid gray';
+    specialTwo.style.backgroundColor = 'white';
+    specialThree.style.color = 'black';
+    specialThree.style.border = '1px solid gray';
+    specialThree.style.backgroundColor = 'white';
+});
+
+specialTwo.addEventListener('click',()=>{
+    specialTwo.style.color = 'white';
+    specialTwo.style.border = '1px solid rgb(0, 119, 255)';
+    specialTwo.style.backgroundColor = 'rgb(0, 119, 255)';
+    specialThree.style.color = 'black';
+    specialThree.style.border = '1px solid gray';
+    specialThree.style.backgroundColor = 'white';
+    specialOne.style.color = 'black';
+    specialOne.style.border = '1px solid gray';
+    specialOne.style.backgroundColor = 'white';
+});
+
+specialThree.addEventListener('click',()=>{
+    specialThree.style.color = 'white';
+    specialThree.style.border = '1px solid rgb(0, 119, 255)';
+    specialThree.style.backgroundColor = 'rgb(0, 119, 255)';
+    specialTwo.style.color = 'black';
+    specialTwo.style.border = '1px solid gray';
+    specialTwo.style.backgroundColor = 'white';
+    specialOne.style.color = 'black';
+    specialOne.style.border = '1px solid gray';
+    specialOne.style.backgroundColor = 'white';
+});
