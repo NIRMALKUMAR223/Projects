@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Details</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./index.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Employee Details</h1>
+        </nav>
+    </header>
+
+    <div id="main">
+        <div id="sidebar">
+            <button id="add">Add Employee</button>
+            <button id="record">Records</button>
+        </div>
+        <div id="main-loader">
+            <div id="employee">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+                </svg>
+                <div id="form">
+                    <h3>Employee Id</h3>
+                    <input type="text" id="empid" maxlength="4" required>
+                    <h3>Employee Name</h3>
+                    <input type="text" id="name" required>
+                    <h3>Salary</h3>
+                    <input type="text" id="salary" maxlength="5" required>
+                    <h3>Email</h3>
+                    <input type="email" id="email" required>
+                    <h3>Phone Number</h3>
+                    <input type="text" maxlength="10" id="phone" required>
+                    <button id="submit">Submit</button>
+                </div>
+            </div>
+            <div id="employee-record">
+                <h2>Records</h2>
+                <hr>
+                <table border="1" id="table" cellspacing="1" cellpadding="20">
+                    <tr id="heading">
+                        <th>EmpId</th>
+                        <th>Name</th>
+                        <th>Sal</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Delete</th>
+                    </tr>
+                    <!-- <tr id="delete">
+                        <td>7865</td>
+                        <td>Nirmal Kumar</td>
+                        <td>25000</td>
+                        <td>rockerrock223@gmail.com</td>
+                        <td>6382339382</td>
+                        <td>
+                            <svg xmlns="http://www.w3.org/2000/svg" id="svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
+                                <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"/>
+                                <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"/>
+                            </svg>
+                        </td>
+                    </tr> -->
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

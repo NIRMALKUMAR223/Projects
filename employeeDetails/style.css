@@ -1,0 +1,217 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif;
+}
+
+body{
+    background-color: rgb(202, 194, 194);
+}
+
+header{
+    width: 100%;
+    height: 70px;
+    background-color: rgb(65, 156, 241);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: fixed;
+    z-index: 2;
+}
+
+header nav{
+    width: 80%;
+    height: 100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav h1{
+    text-align: center;
+}
+
+#main{
+    display: flex;
+    width: 100%;
+    min-height: 500px;
+    /* background-color: blue; */
+}
+
+#main #sidebar{
+    flex-basis: 15%;
+    height: 100vh;
+    background-color: #fff;
+    position: fixed;
+    top: 70px;
+    padding: 0.1em 0em;
+    width: 200px;
+    z-index: 0;
+}
+
+#main #sidebar button{
+    width: 100%;
+    padding: 1em;
+    border: none;
+    font-size: large;
+    font-weight: 500;
+    margin: 0.1em 0em;
+}
+
+#main #sidebar button:hover{
+    background-color: rgb(222, 226, 230);
+    cursor: pointer;
+}
+
+#main #main-loader{
+    flex-basis: 70%;
+    min-height: 90%;
+    padding: 3em 0em;
+    width: 85%;
+    /* background-color: red; */
+    position: absolute;
+    top: 70px;
+    right: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index: 1;
+}
+
+#employee-details{
+    /* background-color: red; */
+    height: 550px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+#employee svg{
+    flex-basis: 25%;
+    height: 100px;
+    width: 100px;
+    color: rgb(65, 156, 241);
+}
+
+#employee{
+    background-color: #fff;
+    padding: 2em 0em;
+    width: 650px;
+    height: 500px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+#employee #form{
+    flex-basis: 90%;
+    height: 90%;
+    padding-top: 1em;
+    /* background-color: aqua; */
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+}
+
+#employee #form h3{
+    font-size: medium;
+    text-align: start;
+    width: 100%;
+    padding-left: 3em;
+}
+
+#employee #form input{
+    background-color: rgb(212, 210, 210);
+    height: 30px;
+    margin: 0.5em 0em;
+    width: 70%;
+    padding-left: 0.5em;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    padding: 1.2em;
+}
+
+#employee #form button{
+    margin: 1em;
+    padding: 0.5em 1em;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    background-color: green;
+    color: white;
+    font-size: medium;
+    font-weight: 700;
+}
+
+#employee #form button:hover{
+    cursor: pointer;
+}
+
+#employee-record{
+    background-color: #fff;
+    min-height: 500px;
+    width: 900px;
+    border-radius: 10px;
+    display: flex;
+    padding-top: 1em;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 1em;
+}
+
+#employee-record h2{
+    text-align: center;
+    padding: 1em;
+    font-size: medium;
+}
+
+#employee-record hr{
+    width: 80%;
+}
+
+#heading{
+    background-color:rgb(65, 156, 241);
+    width: 90%;
+    color: whitesmoke;
+}
+
+table{
+    margin-top: 1em;
+}
+
+table tr th{
+    height: 40px;
+    padding: 0em 1em;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tr td{
+    padding: 0em 0.5em;
+    text-align: center;
+}
+
+table  #svg{
+    color: red;
+    width: 20px;
+    height: 40px;
+    font-weight: 600;
+}
+
+table  #svg:hover{
+    cursor: pointer;
+}
